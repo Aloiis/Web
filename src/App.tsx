@@ -1,21 +1,9 @@
-interface ButtonProps {
-  text?: string
-}
+import { ChatTeardropDots } from "phosphor-react";
 
-function Button(props: ButtonProps){
-  
-  return <button className="bg-orange-500 px-4 h-10 rounded hover:bg-orange-900 transition-colors">{props.text}</button>
-}
-
-
-function App() {
-
+export function App() {
   return (
-    <div className="flex gap-2">
-      <Button text="Enviar" />
-      <Button text="OK" />
-    </div> 
+    <button className="bg-slate-500 rounded-full p-10 h-100">
+      <ChatTeardropDots className="w-32 h-32"/>
+    </button>
   )
 }
-
-export default App
